@@ -1,0 +1,68 @@
+.countdown-container {
+    position: relative;
+}
+
+
+.countdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+    padding: 1rem;
+    max-width: 100%;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+}
+
+/* .countdown::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    width: 94%;
+    transform: translatex(-50%);
+    -webkit-backdrop-filter: blur(100px);
+    backdrop-filter: blur(40px);
+    height: 10px;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+ */
+
+.countdown div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    flex-grow: 1;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: torem(24) torem(16);
+    border-radius: 8px;
+
+    margin-right: 8px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+
+    @include up(480) {
+        padding: torem(24) 0;
+    }
+
+    strong {
+        font-size: torem(24);
+
+        @include up(768) {
+            font-size: torem(36);
+        }
+    }
+
+    span {
+        margin-top: 1rem;
+        font-size: torem(14)
+    }
+}

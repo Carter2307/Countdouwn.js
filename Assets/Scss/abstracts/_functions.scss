@@ -1,0 +1,13 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass functions.
+// -----------------------------------------------------------------------------
+
+/// Convert PX unit to REM unit
+/// @param {String} $value - px unit value
+/// @param {String} $base-font - base projet / page font size
+/// @return {string}
+
+@function torem($value, $base-font : $root-font) {
+  $result  : $value / $base-font;
+  @return  $result * 1rem;
+}

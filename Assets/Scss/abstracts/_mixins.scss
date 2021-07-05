@@ -1,0 +1,9 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+@mixin calc-container($value){
+  padding-left: calc(50% - (#{$value} / 2))!important;
+  padding-right: calc(50% - (#{$value} / 2))!important;
+}
+
